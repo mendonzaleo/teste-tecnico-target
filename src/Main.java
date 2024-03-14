@@ -63,6 +63,5 @@ public class Main {
         System.out.println("A palavra informada é " + palavra + "!");
         System.out.println("A palavra revertida é " + palavraInvertida + "!");
         teclado.close();
-        }
     }
 }
