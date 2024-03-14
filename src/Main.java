@@ -54,14 +54,15 @@ public class Main {
         Assim conseguiria saber quais interruptores controlam cada sala.
 
         //QUESTÃO 5
-        String original = "Palavra";
-        String invertida = inverterString(original);
-        System.out.println("String original: " + original);
-        System.out.println("String invertida: " + invertida);
-
-        public static String inverterString(String original) {
-        StringBuilder invertida = new StringBuilder(original);
-        return invertida.reverse().toString();
+        System.out.println("Digite a palavra que será revertida!");
+        String palavra = teclado.next();
+        String palavraInvertida = " ";
+        for (int i = palavra.length() - 1; i >= 0; i--) {
+            palavraInvertida = palavraInvertida + palavra.charAt(i);
+        }
+        System.out.println("A palavra informada é " + palavra + "!");
+        System.out.println("A palavra revertida é " + palavraInvertida + "!");
+        teclado.close();
         }
     }
 }
